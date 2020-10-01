@@ -221,7 +221,6 @@ p {
   color: #506172;
   font-size: 16px;
   line-height: 30px;
-  margin-bottom: 15px;
   font-weight: normal;
 }
 
@@ -13183,7 +13182,7 @@ a{
 }
 
 .small-container h4{
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   font-family: 'Trebuchet MS', sans-serif;
 }
 .row{
@@ -13215,5 +13214,9 @@ a{
 .rating i{
   color: #f5e44c;
 }
+
+
+
+
 
 /*# sourceMappingURL=style.css.map */
