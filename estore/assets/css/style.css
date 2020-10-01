@@ -3659,14 +3659,15 @@ input:focus {
 /* line 169, ../../SAIFUL/Running_project/250 eCommerce_HTML/250 eCommerce_HTML/250 eCommerce_HTML/assets/scss/_headerMenu.scss */
 .header-bottom .header-right .form-box {
   position: relative;
-  width: 250px;
+  width: 400px;
 }
 
 /* line 172, ../../SAIFUL/Running_project/250 eCommerce_HTML/250 eCommerce_HTML/250 eCommerce_HTML/assets/scss/_headerMenu.scss */
 .header-bottom .header-right .form-box input {
-  border: 1px solid #eeeeee;
+  border: 1px solid #666666;
   border-radius: 30px;
   padding: 10px 20px;
+  font-size: 1.2em;
   width: 100%;
 }
 /* line 179, ../../SAIFUL/Running_project/250 eCommerce_HTML/250 eCommerce_HTML/250 eCommerce_HTML/assets/scss/_headerMenu.scss */
@@ -13056,7 +13057,9 @@ input:focus {
     pointer-events: none;
 }
 
-.categories-btn {
+
+/* Categories */
+/* .categories-btn {
   overflow-x: scroll;
   white-space: nowrap;
 }
@@ -13078,5 +13081,139 @@ input:focus {
 }  
 .categories-btn button:hover {
   background-color: #7a9ed1;
+} */
+
+
+
+
+/* Nary's Part */
+*{
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body{
+  font-family: 'Trebuchet MS', sans-serif;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #555;
+}
+
+.slide-container{
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.slides{
+  display: none;
+}
+
+.prev, .next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+  background-color: rgba(0,0,0,0.8);
+}
+
+.numberText{
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade{
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.container{
+  width: 960px;
+  margin: 0 auto;
+}
+
+.small-container h4{
+  margin-bottom: 20px;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+.row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col-4{
+  flex-basis: 20%;
+  padding: 10px;
+  min-width: 150px;
+  margin-bottom: 50px;
+  box-shadow: 0 0 5px 0px rgb(0,0,0,0.1);
+  cursor: pointer;
+  border-radius: 5%;
+  transition: transform 0.5s;
+}
+
+.col-4:hover{
+  transform: translateY(10px);
+}
+
+.col-4 img{
+  width: 100%;
+}
+
+.rating i{
+  color: #f5e44c;
+}
+
 /*# sourceMappingURL=style.css.map */
